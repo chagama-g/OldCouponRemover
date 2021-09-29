@@ -55,6 +55,7 @@
             let now = new Date();
             //console.log(now.toString());
             if (end_date < now) {
+                // TODO 要素の非表示へ変更する
                 elem.parentElement.remove();
                 console.log("removed");
             }
