@@ -27,7 +27,7 @@
 
         elements.forEach((elem, index) => {
             let text = elem.firstChild.textContent;
-            //console.log(text);
+            
 
             if (text.indexOf(coupon_mark, 0) != 0) {
                 console.log("error");
@@ -53,7 +53,7 @@
             console.log(end_date.toString());
 
             let now = new Date();
-            //console.log(now.toString());
+            
             if (end_date < now) {
                 // TODO 要素の非表示へ変更する
                 elem.parentElement.remove();
